@@ -7,7 +7,6 @@ using namespace std;
 int solution(int bridge_length, int weight, vector<int> truck_weights)
 {
     queue<int> q;
-    vector<int> done;
     int size = 0;
     int answer = 0;
     int i = 0;
@@ -17,7 +16,6 @@ int solution(int bridge_length, int weight, vector<int> truck_weights)
 
         if (q.size() == bridge_length)
         {
-            done.push_back(q.front());
             size -= q.front();
             q.pop();
         }
