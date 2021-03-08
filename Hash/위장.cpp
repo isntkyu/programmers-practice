@@ -20,6 +20,6 @@ int solution(vector<vector<string>> clothes)
     {
         a *= (i.second.size() + 1);
     }
-
+ 
     return answer + a - 1;
 }
