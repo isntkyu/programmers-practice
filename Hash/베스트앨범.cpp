@@ -23,7 +23,7 @@ vector<int> solution(vector<string> genres, vector<int> plays)
     vector<int> answer;
 
     unordered_map<string, int> m;
-    unordered_map<string, vector<pair<int, int>>> u;
+    unordered_map<string, vector<pair<int, int> > > u;
 
     for (int i = 0; i < genres.size(); i++)
     {
@@ -31,10 +31,10 @@ vector<int> solution(vector<string> genres, vector<int> plays)
         u[genres[i]].push_back(make_pair(i, plays[i]));
     }
 
-    vector<pair<string, int>> com(m.begin(), m.end()); //m.sort
+    vector<pair<string, int> > com(m.begin(), m.end()); //m.sort
     sort(com.begin(), com.end(), compare);
 
-    unordered_map<string, vector<pair<int, int>>>::iterator it;
+    unordered_map<string, vector<pair<int, int> > >::iterator it;
     for (it = u.begin(); it != u.end(); it++)
     {
         sort(it->second.begin(), it->second.end(), compare2);
