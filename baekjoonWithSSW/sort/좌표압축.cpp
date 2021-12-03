@@ -19,7 +19,7 @@ int main()
         cin >> temp;
         v2.push_back(temp);
         v.push_back(temp);
-    }
+    } 
 
     sort(v2.begin(), v2.end());
     v2.erase(unique(v2.begin(), v2.end()), v2.end());
