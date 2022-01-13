@@ -21,6 +21,5 @@ vector<int> solution(vector<int> p) {
     
     answer.push_back(1);
     answer.push_back(0);
-    
     return answer;
 }
