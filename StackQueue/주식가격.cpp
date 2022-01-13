@@ -7,6 +7,7 @@ vector<int> solution(vector<int> p) {
     vector<int> answer;
     
     for (int i = 0; i < p.size() - 2; i++) {
+        
         int count = 0;
         int std = p[i];
         
