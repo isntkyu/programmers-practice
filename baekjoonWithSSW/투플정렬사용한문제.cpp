@@ -33,7 +33,7 @@ int solution(int money, vector<int> costs) {
     }
 
     return answer;
-}
+}`
 
 int main()
 {
